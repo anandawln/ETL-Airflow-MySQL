@@ -33,10 +33,10 @@ create_table = MySqlOperator(
 
 # extract & transform
 def extract_transform():
-    file_path = "/usr/local/airflow/dags/data/BTC-USD.csv"
+    file_path = "/home/anandawln/my-airflow-project/dags/data/BTC-USD.csv""
     df = pd.read_csv(file_path)
     df['Date'] = pd.to_datetime(df['Date']).dt.tz_localize(None)
-    df.to_csv("/usr/local/airflow/dags/data/transformed_data.csv", index=False)
+    df.to_csv("/home/anandawln/my-airflow-project/dags/data/BTC-USD.csv"", index=False)
 
 df_task = PythonOperator(
     task_id='extract_transform',
@@ -56,7 +56,7 @@ def load_to_mysql():
     )
 
     cursor = db_conn.cursor()
-    df = pd.read_csv("/usr/local/airflow/dags/data/transformed_data.csv")
+    df = pd.read_csv("/home/anandawln/my-airflow-project/dags/data/BTC-USD.csv"")
 
     insert_query = """
     INSERT INTO stock_data (date, open_price, high_price, low_price, close_price, volume)
