@@ -7,7 +7,7 @@
 ## Installation
 1. Clone this repository:
     ```bash
-    git clone https://github.com/anandawln/ETL-processes
+    git clone https://github.com/anandawln/ETL-pipeline
     cd repository
     ```
 
