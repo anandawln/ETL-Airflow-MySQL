@@ -1,8 +1,8 @@
 
 ## Prerequisites
-- Docker installed ([Get Docker](https://www.docker.com/))
-- Docker Compose installed
+- Docker Desktop installed ([Get Docker](https://www.docker.com/))
 - Astronomer CLI ([Install Astro CLI](https://www.astronomer.io/docs))
+- MySQL Workbench and MySQL Server on WSL2
 
 ## Installation
 1. Clone this repository:
