@@ -35,7 +35,6 @@
 - Customize Dockerfile and `docker-compose.yml` to add dependencies or services.
 - Monitor and debug tasks via the Airflow web interface.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+
 
 ---
